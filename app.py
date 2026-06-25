@@ -30,12 +30,3 @@ if st.button("Predict Total kWh"):
 
     st.success("Demo prediction generated.")
     st.metric("Estimated Total kWh", f"{estimated_value:,.2f} kWh")
-
-    st.write("### Input Summary")
-    st.write({
-        "ZipCode": zipcode,
-        "Month": month_name,
-        "CustomerClass": customer_class,
-        "TotalCustomers": total_customers,
-        "AveragekWh": average_kwh
-    })
